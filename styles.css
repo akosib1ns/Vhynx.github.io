@@ -154,8 +154,18 @@ li {
     padding: 2rem 3rem;
 }
 .modal .car-card .about-car {
-    /* text styling */
-    color: #b53ab9d3;
+    color: #312c31d3; /* Text color */
+    line-height: 1.5; /* Line height */
+    font-weight: bold; /* Font weight */
+    text-align: center; /* Text alignment */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Letter spacing */
+    padding: 10px; /* Padding */
+    border: 2px solid #b53ab9d3; /* Border */
+    border-radius: 5px; /* Border radius */
+    background-color: #fff; /* Background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+  
 }
 .modal h2 {
     padding-block: 1rem ;
@@ -461,39 +471,49 @@ footer p {
     }
     
 }
-.CD {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
-    align-items: center;
 
-}
-.CD-image-zomboss {
+/* Your CSS styles here */
+h4 {
+    font-size: larger;
     text-align: center;
 }
-.CD-image-zomboss img {
-    max-width: 120%;
-    width: 400px;
-    
-    
+section {
+    text-align: center;
+    margin: 20px;
+    background-color: #ffffff;
 }
-.CD-text h2 {
-    font-size: var(--h2-font);
-
-
+ul {
+    list-style-type: none;
+}
+li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+img {
+    max-width: 50%; 
+    margin-right: 10px;
+}
+.image-container {
+    display: flex;
+    align-items: center;
 }
 
-.CD-text p {
-    margin: 0.8rem 0 1.8rem;
-    line-height: 1.7;
+.horizontal-list {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-@media (max-width: 768px){
-    .CD {
-        grid-template-columns: 1fr;
-        text-align: center;
+@media screen and (max-width: 768px) {
+    li {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    img {
+        margin-right: 0;
     }
 }
+
 
 
 
