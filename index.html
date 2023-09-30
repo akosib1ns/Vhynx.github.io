@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRELIM!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <img src="Image/logo.png" alt="Logo">
+    </div>
+    <p style="font-size: large;">CAR GO VIEW!</p>
+    <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#models">Cars</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Home Section -->
+    <div id="home" class="hero">
+        <h2 style="font-size: 500%; color:rgb(218, 199, 243);">Discover Your Dream Car</h2>
+        <p style="color: #fffeff; font-size: 200%;">Explore our wide range of cars with cutting-edge features.</p>
+    </div>
+<br>
+<br>
+    <div id="models" class="container">
+        <section class="services">
+            <div class="container-outer">
+                <h2 class="section-title">Types of car</h2>
+                <div class="services-grid">
+                    <div class="gallery-container">
+                        <!-- Car Model: EV -->
+                        <div class="gallery">
+                            <a href="#EV">
+                                <img src="Image/EV.jpeg" alt="EV" width="100" height="50">
+                            </a>
+                            <h3 class="service-title">EV</h3>
+                            <p class="service-description"style="color: darkslategrey;">ELECTRICAL VEHICLE CAR</p>
+                        </div>
+                        <div class="gallery">
+                            <a href="#SEDAN">
+                                <img src="Image/SEDAN.jpeg" alt="SEDAN" width="100" height="50">
+                            </a>
+                            <h3 class="service-title">SEDAN</h3>
+                            <p class="service-description"style="color: darkslategrey;">SEDAN</p>
+                        </div>
+                        <div class="gallery">
+                            <a href="#HYBRID">
+                                <img src="Image/HYBRID.jpeg" alt="HYBRID"width="100" height="50">
+                            </a>
+                            <h3 class="service-title">HYBRID</h3>
+                            <p class="service-description" style="color: darkslategrey;">Hybrid cars for eco-conscious drivers.</p>
+                        </div>
+                        <div class="gallery">
+                            <a href="#SUV">
+                                <img src="Image/SUV.jpeg" alt="SUV"width="100" height="50">
+                            </a>
+                            <h3 class="service-title">SUV</h3>
+                            <p class="service-description"style="color: darkslategrey;">SPORT UTILITY VEHICLE</p>
+                        </div>
+                        <div class="gallery">
+                            <a href="#TRUCK">
+                                <img src="Image/TRUCK.jpeg" alt="TRUCK" width="100" height="50">
+                            </a>
+                            <h3 class="service-title">TRUCK</h3>
+                            <p class="service-description"style="color: darkslategrey;">Versatile trucks for all your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br>
+    <br>
+    <section id="features" class="car-features">
+        <h2> Features</h2>
+            <ul>
+                <li>
+                    <video autoplay controls>   
+                        <source src="Video/ASS.mp4" type="video/mp4">
+                    </video>
+                    <span>Advanced Safety Systems</span>
+                </li>
+                <li>
+                    <video autoplay controls>
+                        <source src="Video/EFE.mp4" type="video/mp4">
+                    </video>
+                    <span>Efficient Fuel Economy</span>
+                </li>
+                <li>
+                    <video autoplay controls>
+                        <source src="Video/LI.mp4" type="video/mp4">
+                    </video>
+                    <span>Luxurious Interiors</span>
+                </li>
+                <li>
+                    <video autoplay controls>
+                        <source src="Video/SOAT.mp4" type="video/mp4">
+                    </video>
+                    <span>State-of-the-Art Technology</span>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <br>
+    <br>
+   <!-- Car model -->
+<div id="modal-one" class="modal">
+    <div class="car-carousel">
+        <div class="car-card">
+            <h2>Car Models</h2>
+            <div class="slideshow-container">
+            <!-- Carousel Navigation Buttons (inside the container) -->
+                <div class="carousel-button left-button">&#10094;</div>
+                <img class="slideshow-image" src="Image/nissan EV.png" alt="Image 1" data-car="Nissan_Leaf_S">
+                <img class="slideshow-image" src="Image/testla EV.png" alt="Image 2" data-car="Tesla_Model_S_Plaid">
+                <img class="slideshow-image" src="Image/audi EV.png" alt="Image 3" data-car="Audi_E_Tron">
+                <div class="carousel-button right-button">&#10095;</div>
+            </div>
+            <div class="about-car">
+                <p class="car-info" style="font-style: italic;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="car-name style="color: rgba(27, 27, 27, 0.836); font-size: xx-large;">Electrical Vehicle</p>
+                <!-- Description -->
+            </div>
+        </div>
+    </div>
+    <button class="close-button" style="font-size: xx-large;">x</button>
+</div>
+<div id="modal-two" class="modal">
+    <div class="car-carousel">
+        <div class="car-card">
+            <h2>Car Models</h2>
+            <!-- Image Slides -->
+            <div class="slideshow-container">
+                <!-- Carousel Navigation Buttons (inside the container) -->
+                <div class="carousel-button left-button">&#10094;</div>
+                <img class="slideshow-image" src="Image/nissan SDN.png"alt="Image 1" data-car="Nissan_Versa_1_6_SV">
+                <img class="slideshow-image" src="Image/toyota SDN.png" alt="Image 2" data-car="Toyota_Vios_E">
+                <img class="slideshow-image" src="Image/hon SDN.png" alt="Image 3" data-car="Honda_Civic_ES_L">
+                <div class="carousel-button right-button">&#10095;</div>
+            </div>
+            <!-- Description -->
+            <div class="about-car">
+                <p class="car-info" style="font-style: italic;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="car-name" style="color: rgba(27, 27, 27, 0.836); font-size: xx-large;">SEDAN VEHICLE</p>
+            </div>
+        </div>
+    </div>
+    <button class="close-button" style="font-size: xx-large;">x</button>
+</div>
+<div id="modal-three" class="modal">
+    <div class="car-carousel">
+        <div class="car-card">
+            <h2>Car Models</h2>
+            <!-- Image Slides -->
+            <div class="slideshow-container">
+                <!-- Carousel Navigation Buttons (inside the container) -->
+                <div class="carousel-button left-button">&#10094;</div>
+                <img class="slideshow-image" src="Image/Hybrid honda.png"alt="Image 1" data-car="Honda_Insight">
+                <img class="slideshow-image" src="Image/hybrid toyota.png" alt="Image 2" data-car="Toyota_Prius_LE">
+                <img class="slideshow-image" src="Image/hybrid mit.png" alt="Image 3" data-car="Mitsubishi_Outlander_ES">
+                <div class="carousel-button right-button">&#10095;</div>
+            </div>
+            <!-- Description -->
+            <div class="about-car">
+                <p class="car-info" style="font-style: italic;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="car-name" style="color: rgba(27, 27, 27, 0.836); font-size: xx-large;">HYBRID VEHICLE</p>
+            </div>
+        </div>
+    </div>
+    <button class="close-button" style="font-size: xx-large;">x</button>
+</div>
+<div id="modal-four" class="modal">
+    <div class="car-carousel">
+        <div class="car-card">
+            <h2>Car Models</h2>
+            <!-- Image Slides -->
+            <div class="slideshow-container">
+                <!-- Carousel Navigation Buttons (inside the container) -->
+                <div class="carousel-button left-button">&#10094;</div>
+                <img class="slideshow-image" src="Image/for.png" alt="Image 1" data-car="Toyota_Fortuner">
+                <img class="slideshow-image" src="Image/mon.png" alt="Image 2" data-car="Mitsubishi_Montero">
+                <img class="slideshow-image" src="Image/ter.png" alt="Image 3" data-car="Nissan_Terra">
+                <div class="carousel-button right-button">&#10095;</div>
+            </div>
+            <!-- Description -->
+            <div class="about-car">
+                <p class="car-info" style="font-style: italic;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="car-name" style="color: rgba(27, 27, 27, 0.836); font-size: xx-large;">SUV</p>
+            </div>
+        </div>
+    </div>
+    <button class="close-button" style="font-size: xx-large;">x</button>
+</div>
+<div id="modal-five" class="modal">
+    <div class="car-carousel">
+        <div class="car-card">
+            <h2>Car Models</h2>
+            <!-- Image Slides -->
+            <div class="slideshow-container">
+            <!-- Carousel Navigation Buttons (inside the container) -->
+                <div class="carousel-button left-button">&#10094;</div>
+                <img class="slideshow-image" src="Image/nav.png" alt="Image 1" data-car="Nissan_Navara">
+                <img class="slideshow-image" src="Image/str.png" alt="Image 2"data-car="Mitsubishi_Strada">
+                <img class="slideshow-image" src="Image/hil.png" alt="Image 3" data-car=" ">
+                <div class="carousel-button right-button">&#10095;</div>
+            </div>
+        <!-- Description -->
+            <div class="about-car">
+                <p class="car-info" style="font-style: italic;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="car-name" style="color: rgba(27, 27, 27, 0.836); font-size: xx-large;">TRUCK</p>
+            </div>
+        </div>
+    </div>
+    <button class="close-button" style="font-size: xx-large;">x</button>
+
+</div>
+<section class="CD" id="zomboss">
+    <div class="CD-image-zomboss">
+      <h2 class="title">Zombie Army Leader</h2>
+      <img src="Image/Lucid Air.JPG" alt="">
+    </div>
+
+    <div class="CD-text">
+      
+      <h2>Edgar George J. Zomboss <br> "Dr. Zomboss"</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deserunt sed illo. Nihil temporibus iusto cupiditate assumenda hic voluptatem, dolorem voluptatibus blanditiis, aut officia vitae.</p>
+      <a href="#menu" class="btn">Learn more</a>
+    </div>
+
+    
+  </section>
+
+   <!-- Contact Section -->
+   <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to see other cars info, feel free to contact us.</p>
+    <a href="tel:+123456789">Call Us: 8-700-0</a>
+    
+    <a href="mailto:info@carworld.com">Email Us: Car-info@Email.com</a>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2023 Car GO View</p>
+</footer>
+ 
+</body>
+</html> 
+    
